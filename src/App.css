@@ -1,38 +1,28 @@
 .App {
+  background-image: linear-gradient(to right, #09203f, #537895);
+}
+.movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 70px;
+}
+.class-form {
+  padding-top: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.class-form input {
+  border-radius: 10px;
+  width: 400px;
+  height: 25px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.class-form button {
+  background: rgb(14, 14, 63);
+  color: aliceblue;
+  border-radius: 5px;
+  height: 30px;
+  margin-left: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.class-form button:hover {
+  background: rgb(0, 128, 43);
 }
